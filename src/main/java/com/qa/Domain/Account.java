@@ -5,13 +5,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
 @Entity
 public class Account {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
+	private Long id;
 	private String firstName;
 	private String lastName;
 	private String accountNumber;
@@ -20,12 +19,19 @@ public class Account {
 
 	}
 
-	public Account(String firstName, String lastName, String accountNumber) {
-		
+	public Account(Long id, String firstName, String lastName, String accountNumber) {
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.accountNumber = accountNumber;
-
+	}
+	
+	public void setId(long id) {
+		this.id = id;
+	}
+	
+	public long getId() {
+		return id;
 	}
 	
 	public void setFirstName(String firstName) {

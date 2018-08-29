@@ -1,1 +1,1 @@
-INSERT INTO Account (id, firstname, lastname, accountnumber) values (1, 'test', 'test', '00001');
+INSERT INTO account (firstname, lastname, accountnumber) values ('test', 'test', '00001');

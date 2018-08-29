@@ -1,0 +1,5 @@
+com/qa/Domain/Account.class
+com/qa/service/AccountService.class
+com/qa/controller/AccountController.class
+com/qa/Repository/AccountRepository.class
+com/qa/Application.class
